@@ -1,6 +1,6 @@
 {
   "name": "level-lock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "in-memory advisory read/write locks for leveldb keys",
   "main": "index.js",
   "dependencies": {},
