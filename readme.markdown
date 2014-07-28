@@ -1,6 +1,6 @@
 # level-lock
 
-in-memory advisory read/write locks on keys
+in-memory advisory read/write locks for leveldb keys
 
 # example
 

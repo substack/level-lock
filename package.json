@@ -1,0 +1,32 @@
+{
+  "name": "level-lock",
+  "version": "1.0.0",
+  "description": "in-memory advisory read/write locks for leveldb keys",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^2.13.2",
+    "bytewise": "~0.7.1",
+    "level-test": "~1.6.3"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/level-lock.git"
+  },
+  "homepage": "https://github.com/substack/level-lock",
+  "keywords": [
+    "level",
+    "leveldb",
+    "lock",
+    "advisory"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
