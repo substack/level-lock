@@ -33,7 +33,10 @@ var unlock = lock(db, key, 'w');
 if (!unlock) return exit(1, 'locked');
  
 db.get(key, function (err, value) {
-    if (value) return exit(1, 'that username already exists');
+    if (value) {
+        unlock();
+        return exit(1, 'that username already exists');
+    }
     
     db.put('users!substack', userdata, function (err) {
         unlock();
