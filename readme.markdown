@@ -2,6 +2,8 @@
 
 in-memory advisory read/write locks for leveldb keys
 
+[![build status](https://secure.travis-ci.org/substack/level-lock.png)](http://travis-ci.org/substack/level-lock)
+
 # example
 
 A very common use-case for locking is to prevent race conditions when checking
