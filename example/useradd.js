@@ -12,7 +12,7 @@ if (!unlock) return exit(1, 'locked');
 db.get(key, function (err, value) {
     if (value) return exit(1, 'that username already exists');
     
-    db.put('users!substack', userdata, function (err, msg) {
+    db.put('users!substack', userdata, function (err) {
         unlock();
         if (err) return exit(1, err);
         console.log('created user ' + username);
