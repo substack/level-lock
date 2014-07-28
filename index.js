@@ -3,7 +3,8 @@ module.exports = function (db, key, mode) {
     if (!db._locks.read) db._locks.read = {};
     if (!db._locks.write) db._locks.write = {};
     
-    var ekey = typeof db.options.keyEncoding === 'object'
+    var ekey = db.options
+    && typeof db.options.keyEncoding === 'object'
     && db.options.keyEncoding.encode
         ? db.options.keyEncoding.encode(key)
         : key
