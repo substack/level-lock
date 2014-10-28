@@ -7,6 +7,7 @@
   "devDependencies": {
     "tape": "^2.13.2",
     "bytewise": "~0.7.1",
+    "level-spaces": "^1.1.1",
     "level-test": "~1.6.3"
   },
   "scripts": {
